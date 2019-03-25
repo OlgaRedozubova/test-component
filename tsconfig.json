@@ -1,26 +1,24 @@
 {
     "compilerOptions": {
-        "outDir": "./lib",
+        "baseUrl": ".",
+        "module": "commonjs",
         "target": "es5",
         "lib": ["es6", "dom"],
-        "module": "commonjs",
-        "noImplicitAny": true,
-        "strictNullChecks": true,
-        "removeComments": true,
-        "declaration": false,
         "sourceMap": true,
+        "allowJs": true,
         "jsx": "react",
-        "typeRoots": [
-            "index.d.ts",
-            "node_modules/@types"
-        ]
+        "moduleResolution": "node",
+        "rootDir": "src",
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitReturns": true,
+        "experimentalDecorators": true,
+        "noImplicitThis": true,
+        "importHelpers": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "noUnusedLocals": true
     },
     "filesGlob" : [
         "./index.d.ts"
-    ],
-    "include": [
-        "./src/**/*.tsx",
-        "./src/**/*.ts"
     ],
     "exclude": [
         "node_modules"
