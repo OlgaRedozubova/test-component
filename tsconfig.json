@@ -2,6 +2,7 @@
     "compilerOptions": {
         "outDir": "./lib",
         "target": "es5",
+        "lib": ["es6", "dom"],
         "module": "commonjs",
         "noImplicitAny": true,
         "strictNullChecks": true,
@@ -14,6 +15,9 @@
             "node_modules/@types"
         ]
     },
+    "filesGlob" : [
+        "./index.d.ts"
+    ],
     "include": [
         "./src/**/*.tsx",
         "./src/**/*.ts"
